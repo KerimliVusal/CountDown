@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background: linear-gradient(270deg, rgba(63,94,251,1) 0%, rgba(123,80,166,1) 57%, rgba(176,68,90,1) 100%); */
+    background: rgb(186, 124, 198);
+    background: radial-gradient(circle, rgb(144, 26, 99) 0%, rgba(63, 40, 167, 0.79) 100%);}
+
+.red-text {
+    margin:12px auto;
+    color:#e91414;
+    padding: 6px 0;
+    font-size: 1.1rem;
+}
+
+#main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+.header h1{
+color: #fff;
+width: 80%;
+font-size: 25px;
+font-family: 'Cursive';
+font-weight: 500;
+margin-bottom: 20px;
+text-align: center;
+}
+.header p{
+color: #ebe8e8;
+width: 60%;
+font-size: 18px;
+font-family: 'Cursive';
+font-weight: 500;
+text-align: center;
+}
+.d_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_center {
+    text-align: center;
+    color: #dedddd;
+}
+
+.times_inputs {
+    color: #666;
+    font-size: 1.2rem;
+}
+.times_inputs input {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin: 10px 6px;
+    font-size: 30px;
+     text-align: center;
+}
+
+.btn {
+    border: none;
+    box-shadow: 0 1px 1px #333;
+    margin: 0 7px;
+    border-radius: 6px;
+    padding: 14px 12px;
+    min-width: 100px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+}
+
+.btn_start {
+    display: block;
+}
+
+.btn_pause_resume {
+    display: none;
+}
+
+.btn_stop {
+    display: none;
+}
+
+.btn_reset {
+    display: none;
+}
+
+
+.progressbar_container .progressbar.low {
+    background-color: #ff2f2f;
+}
+.pairDot{
+    font-size: 30px;
+    color: #ffffff;
+    margin: 10px;
+    padding: 0px 0px 40px 0;
+    display: flex;
+    align-items: center;
+}
+
+.digit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .digitRows{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .digit {
+    color: #070707;
+    font-size: 2.5rem;
+    background: #fff;
+    border-radius: 3px;
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+  }
