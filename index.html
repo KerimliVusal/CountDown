@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CountDown</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
+    <title>Countdown Timer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="app.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="header">
+        <h1>WE ARE COMING SOON!</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus, laborum cupiditate odit a inventore vel velit. Aut quam assumenda, aliquam totam molestiae rerum saepe quas temporibus nobis aperiam beatae.</p>
+      </div>
+      <div class="d_flex times_inputs">
+        <div>
+          <input
+            type="number"
+            id="hours"
+            class="time_input"
+            name="hours"
+            min="0"
+            value="0"
+          />
+          <div class="text_center">Hours</div>
+        </div>
+        <span class="pairDot">:</span>
+        <div>
+          <input
+            type="number"
+            id="minutes"
+            class="time_input"
+            name="minutes"
+            min="0"
+            value="5"
+          />
+          <div class="text_center">Minutes</div>
+
+        </div>
+        <span class="pairDot">:</span>
+        <div>
+          <input
+            type="number"
+            id="seconds"
+            class="time_input"
+            name="seconds"
+            min="0"
+            value="0"
+          />
+          <div class="text_center">Seconds</div>
+        </div>
+      </div>
+      <br />
+      <!-- action buttons -->
+      <div class="d_flex">
+        <button class="btn btn_start"><i class="fa-solid fa-play"></i></button>
+        <button class="btn btn_pause_resume"><i class="fa-solid fa-pause"></i></button>
+        <button class="btn btn_stop"><i class="fa-solid fa-stop"></i></button>
+        <button class="btn btn_reset"><i class="fa-solid fa-circle-pause"></i></button>
+      </div>
+      <div class="message"></div>
+      <!-- progress bar -->
+      <div class="progressbar_container">
+        <div class="progressbar"></div>
+      </div>
+      <!-- author info -->
+     
+    </div>
+    <!-- scripts -->
+    <script src="app.js"></script>
+  </body>
 </html>
